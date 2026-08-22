@@ -1,5 +1,4 @@
-import sendContactEmail from '../services/contact.service.js'
-
+import sendContactEmail from '../services/email.service.js'
 const sendContactController = async (req, res) => {
   try {
     const {

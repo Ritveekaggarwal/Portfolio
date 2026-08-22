@@ -9,6 +9,7 @@ import projectRoutes from '../routes/project.routes.js'
 import contactRoutes from '../routes/contact.routes.js'
 import authRoutes from '../routes/auth.routes.js'
 import aboutRoutes from '../routes/about.routes.js'
+import googleAuthRoutes from '../routes/google-auth.routes.js'
 
 const app = express()
 
@@ -46,5 +47,9 @@ app.use('/api/contact', contactRoutes)
 app.use('/api/auth', authRoutes)
 
 app.use('/api/about', aboutRoutes)
+app.use(
+  '/api/auth',
+  googleAuthRoutes,
+)
 
 export default app

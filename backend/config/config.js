@@ -58,6 +58,27 @@ const config = {
       process.env.ORIGIN ||
       'http://localhost:5173',
   },
+google: {
+  clientId:
+    process.env.GOOGLE_CLIENT_ID,
+
+  clientSecret:
+    process.env.GOOGLE_CLIENT_SECRET,
+
+  redirectUri:
+    process.env.GOOGLE_REDIRECT_URI,
+
+  refreshToken:
+    process.env.GOOGLE_REFRESH_TOKEN,
+
+  sender:
+    process.env.GOOGLE_GMAIL_USER,
+},
+
+email: {
+  receiver:
+    process.env.CONTACT_RECEIVER_EMAIL,
+},
 }
 
 export default config
