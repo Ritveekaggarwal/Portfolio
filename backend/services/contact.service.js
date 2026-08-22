@@ -2,12 +2,20 @@ import nodemailer from 'nodemailer'
 import config from '../config/config.js'
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 587,
+  secure: false,
+
+  requireTLS: true,
 
   auth: {
     user: config.email.user,
     pass: config.email.appPassword,
   },
+
+  connectionTimeout: 30000,
+  greetingTimeout: 30000,
+  socketTimeout: 60000,
 })
 
 const sendContactEmail = async ({
@@ -18,6 +26,7 @@ const sendContactEmail = async ({
 }) => {
   const mailOptions = {
     from: config.email.user,
+
     to: config.email.receiver,
 
     replyTo: email,
@@ -57,12 +66,16 @@ ${message}
           <strong>Message:</strong>
         </p>
 
-        <p>${message.replace(/\n/g, '<br />')}</p>
+        <p>
+          ${message.replace(/\n/g, '<br />')}
+        </p>
       </div>
     `,
   }
 
-  return await transporter.sendMail(mailOptions)
+  return await transporter.sendMail(
+    mailOptions,
+  )
 }
 
 export default sendContactEmail
