@@ -1,0 +1,977 @@
+:root {
+  /* =========================================
+     BRAND COLORS
+  ========================================= */
+
+  --portfolio-brand: #34466f;
+  --portfolio-brand-soft: #60799d;
+  --portfolio-brand-muted: #71809a;
+
+  --portfolio-green: #7ca95d;
+  --portfolio-green-dark: #6f9952;
+  --portfolio-green-soft: #edf5e5;
+
+  --portfolio-red: #ed8f98;
+  --portfolio-red-soft: #fff1f2;
+
+  --portfolio-blue: #9ac5e4;
+  --portfolio-blue-soft: #f0f7ff;
+  /* =========================================
+   BACKGROUND / CLOUDS
+========================================= */
+
+/* =========================================
+   CLOUDS
+========================================= */
+
+--portfolio-cloud-opacity: 0.62;
+
+--portfolio-cloud-filter:
+  drop-shadow(
+    0 8px 18px
+    rgba(120, 155, 175, 0.08)
+  );
+
+--portfolio-sky-glow:
+  rgba(255, 255, 255, 0.20);
+
+--portfolio-ground-glow:
+  radial-gradient(
+    circle at 50% 100%,
+    rgba(91, 163, 52, 0.45),
+    transparent 68%
+  );
+
+--portfolio-ground-overlay:
+  rgba(127, 192, 78, 0.20);
+/* =========================================
+   3D POKÉ BALL ICON
+========================================= */
+
+--portfolio-section-icon-size: 28px;
+
+--portfolio-pokeball-rotation-duration: 4.5s;
+  /* =========================================
+   SECTION POKÉ BALL
+========================================= */
+
+--portfolio-pokeball-gold: #d9b84f;
+--portfolio-pokeball-gold-dark: #b7952f;
+
+--portfolio-pokeball-white: #ffffff;
+
+--portfolio-pokeball-line: #555c66;
+
+--portfolio-pokeball-core:
+  #f7f8fa;
+
+--portfolio-pokeball-core-border:
+  #59616b;
+
+--portfolio-pokeball-size: 28px;
+--portfolio-pokeball-core-size: 10px;
+
+--portfolio-pokeball-rotation-duration: 4s;
+  /* =========================================
+     PAGE
+  ========================================= */
+
+  --portfolio-page-bg:
+    linear-gradient(
+      to bottom,
+      #c8edf9 0%,
+      #d9f0ea 28%,
+      #e7f3df 50%,
+      #cde5b5 74%,
+      #a4d46c 100%
+    );
+
+  /* =========================================
+     CARDS
+  ========================================= */
+
+  --portfolio-card-bg:
+    rgba(255, 255, 255, 0.90);
+
+  --portfolio-card-bg-solid:
+    #ffffff;
+
+  --portfolio-card-border:
+    rgba(255, 255, 255, 0.75);
+
+  --portfolio-input-bg:
+    rgba(255, 255, 255, 0.80);
+
+  --portfolio-soft-bg:
+    #f8faf8;
+
+  --portfolio-muted-bg:
+    #e4eaf0;
+
+  /* =========================================
+     TEXT
+  ========================================= */
+
+  --portfolio-text:
+    #293966;
+
+  --portfolio-text-soft:
+    #5f6e83;
+
+  --portfolio-text-muted:
+    #8d98a8;
+
+  --portfolio-line:
+    #dce3e8;
+
+  /* =========================================
+     ICONS
+  ========================================= */
+
+  --portfolio-icon:
+    #60799d;
+
+  --portfolio-icon-muted:
+    #a5afbc;
+
+  --portfolio-location-icon:
+    #e05c75;
+
+  /* =========================================
+     BUTTONS
+  ========================================= */
+
+  --portfolio-button-bg:
+    #34466f;
+
+  --portfolio-button-text:
+    #ffffff;
+
+  --portfolio-button-soft-bg:
+    #e4eaf0;
+
+  --portfolio-button-soft-text:
+    #5f6e83;
+
+  --portfolio-button-hover-bg:
+    #293a61;
+
+  /* =========================================
+     CONTACT
+  ========================================= */
+
+  --portfolio-contact-bg:
+    linear-gradient(
+      135deg,
+      #fff1f2 0%,
+      #ffffff 45%,
+      #f0f7ff 100%
+    );
+
+  --portfolio-contact-glow-red:
+    rgba(255, 184, 189, 0.20);
+
+  --portfolio-contact-glow-blue:
+    rgba(185, 223, 255, 0.25);
+
+  --portfolio-contact-form-bg:
+    rgba(255, 255, 255, 0.70);
+
+  --portfolio-contact-input-bg:
+    rgba(255, 255, 255, 0.80);
+
+  --portfolio-contact-input-border:
+    #eadfe1;
+
+  --portfolio-contact-input-placeholder:
+    #a9b0ba;
+
+  --portfolio-contact-focus:
+    #eda3aa;
+
+  --portfolio-contact-success:
+    #67955c;
+
+  --portfolio-contact-error:
+    #dc2626;
+
+  --portfolio-contact-button-bg:
+    linear-gradient(
+      135deg,
+      #ed8f98 0%,
+      #9ac5e4 100%
+    );
+
+  --portfolio-contact-button-shadow:
+    0 8px 20px
+    rgba(186, 137, 150, 0.18);
+
+  --portfolio-contact-button-shadow-hover:
+    0 12px 25px
+    rgba(186, 137, 150, 0.25);
+
+  /* =========================================
+     LAYOUT SIZES
+  ========================================= */
+
+  --portfolio-max-width:
+    1200px;
+
+  --portfolio-left-width:
+    340px;
+
+  --portfolio-card-radius:
+    28px;
+
+  --portfolio-contact-radius:
+    30px;
+
+  --portfolio-small-radius:
+    16px;
+
+  --portfolio-content-gap:
+    28px;
+
+  --portfolio-section-gap:
+    24px;
+
+  --portfolio-card-padding:
+    32px;
+
+  --portfolio-page-padding-x:
+    32px;
+
+  --portfolio-page-padding-y:
+    24px;
+
+  /* =========================================
+     AVATAR
+  ========================================= */
+
+  --portfolio-avatar-height:
+    240px;
+
+  --portfolio-avatar-radius:
+    22px;
+
+  /* =========================================
+     SECTION HEADER
+  ========================================= */
+
+  --portfolio-section-icon-size:
+    28px;
+
+  --portfolio-section-icon-core-size:
+    10px;
+
+  /* =========================================
+     CONTENT
+  ========================================= */
+
+  --portfolio-card-title-size:
+    18px;
+
+  --portfolio-experience-meta-width:
+    145px;
+
+  --portfolio-item-gap:
+    20px;
+
+  --portfolio-experience-max-height:
+    430px;
+
+  --portfolio-education-max-height:
+    430px;
+
+  --portfolio-project-max-height:
+    520px;
+
+  --portfolio-project-gap:
+    16px;
+
+  --portfolio-project-icon-button-size:
+    36px;
+
+  --portfolio-scroll-padding:
+    8px;
+
+  /* =========================================
+     TYPOGRAPHY
+  ========================================= */
+
+  --portfolio-font-body:
+    'Poppins', sans-serif;
+
+  --portfolio-title-size:
+    27px;
+
+  --portfolio-section-title-size:
+    21px;
+
+  --portfolio-body-size:
+    15px;
+
+  --portfolio-small-size:
+    12px;
+
+  --portfolio-line-height:
+    1.8;
+
+  /* =========================================
+     CONTACT SIZES
+  ========================================= */
+
+  --portfolio-contact-padding:
+    32px;
+
+  --portfolio-contact-form-padding:
+    20px;
+
+  --portfolio-contact-grid-gap:
+    48px;
+
+  --portfolio-contact-input-radius:
+    12px;
+
+  --portfolio-contact-form-radius:
+    22px;
+
+  --portfolio-contact-accent-height:
+    6px;
+
+  --portfolio-contact-title-size:
+    36px;
+
+  --portfolio-contact-description-size:
+    14px;
+
+  /* =========================================
+     SHADOWS
+  ========================================= */
+
+  --portfolio-card-shadow:
+    0 20px 60px
+    rgba(64, 97, 47, 0.08);
+
+  --portfolio-soft-shadow:
+    0 10px 30px
+    rgba(64, 97, 47, 0.08);
+
+  /* =========================================
+     ANIMATION
+  ========================================= */
+
+  --portfolio-transition:
+    250ms ease;
+
+  /* =========================================
+     MOBILE
+  ========================================= */
+
+  --portfolio-mobile-padding-x:
+    16px;
+
+  --portfolio-mobile-padding-y:
+    18px;
+
+  --portfolio-mobile-gap:
+    18px;
+}
+
+
+/* ===========================================
+   DARK THEME
+=========================================== */
+
+[data-theme='dark'] {
+  --portfolio-page-bg:
+    linear-gradient(
+      to bottom,
+      #172235 0%,
+      #24344a 35%,
+      #344638 70%,
+      #263a25 100%
+    );
+
+/* =========================================
+   DARK BACKGROUND / CLOUDS
+========================================= */
+
+--portfolio-cloud-opacity: 0.20;
+
+--portfolio-cloud-filter:
+  drop-shadow(
+    0 8px 22px
+    rgba(0, 0, 0, 0.16)
+  );
+
+--portfolio-sky-glow:
+  rgba(165, 195, 230, 0.08);
+
+--portfolio-ground-glow:
+  radial-gradient(
+    circle at 50% 100%,
+    rgba(72, 110, 62, 0.32),
+    transparent 68%
+  );
+
+--portfolio-ground-overlay:
+  rgba(20, 40, 25, 0.42);
+
+
+  /* Cards */
+
+  --portfolio-pokeball-gold: #e0bd58;
+
+--portfolio-pokeball-gold-dark: #c5a13e;
+
+--portfolio-pokeball-white: #eef1f4;
+
+--portfolio-pokeball-line: #8b96a4;
+
+--portfolio-pokeball-core:
+  #dfe5eb;
+
+--portfolio-pokeball-core-border:
+  #8b96a4;
+
+
+  --portfolio-card-bg:
+    rgba(16, 24, 39, 0.90);
+
+  --portfolio-card-bg-solid:
+    #101827;
+
+  --portfolio-card-border:
+    rgba(255, 255, 255, 0.08);
+
+  --portfolio-input-bg:
+    rgba(15, 23, 42, 0.75);
+
+  --portfolio-soft-bg:
+    #172235;
+
+  --portfolio-muted-bg:
+    #202c3d;
+
+  /* Text */
+
+  --portfolio-text:
+    #f5f7fa;
+
+  --portfolio-text-soft:
+    #c4ccd8;
+
+  --portfolio-text-muted:
+    #8895a7;
+
+  --portfolio-line:
+    #334155;
+
+  /* Icons */
+
+  --portfolio-icon:
+    #9bb0ce;
+
+  --portfolio-icon-muted:
+    #64748b;
+
+  --portfolio-location-icon:
+    #f08a9b;
+
+  /* Buttons */
+
+  --portfolio-button-bg:
+    #eef3fa;
+
+  --portfolio-button-text:
+    #1f2d48;
+
+  --portfolio-button-soft-bg:
+    #202c3d;
+
+  --portfolio-button-soft-text:
+    #d3dbe7;
+
+  --portfolio-button-hover-bg:
+    #ffffff;
+
+  /* Skill accents */
+
+  --portfolio-green-soft:
+    #263a25;
+
+  --portfolio-red-soft:
+    #351f24;
+
+  --portfolio-blue-soft:
+    #1d2c3e;
+
+  /* Contact */
+
+  --portfolio-contact-bg:
+    linear-gradient(
+      135deg,
+      #1f2937 0%,
+      #172033 50%,
+      #1e293b 100%
+    );
+
+  --portfolio-contact-glow-red:
+    rgba(237, 143, 152, 0.12);
+
+  --portfolio-contact-glow-blue:
+    rgba(154, 197, 228, 0.10);
+
+  --portfolio-contact-form-bg:
+    rgba(15, 23, 42, 0.65);
+
+  --portfolio-contact-input-bg:
+    rgba(15, 23, 42, 0.72);
+
+  --portfolio-contact-input-border:
+    #334155;
+
+  --portfolio-contact-input-placeholder:
+    #8491a3;
+
+  --portfolio-contact-focus:
+    #ed8f98;
+
+  --portfolio-contact-success:
+    #8fbd7b;
+
+  --portfolio-contact-error:
+    #f87171;
+
+  --portfolio-contact-button-bg:
+    linear-gradient(
+      135deg,
+      #d97883 0%,
+      #6798bd 100%
+    );
+
+  --portfolio-contact-button-shadow:
+    0 8px 20px
+    rgba(0, 0, 0, 0.18);
+
+  --portfolio-contact-button-shadow-hover:
+    0 12px 25px
+    rgba(0, 0, 0, 0.24);
+
+  /* Shadows */
+
+  --portfolio-card-shadow:
+    0 20px 60px
+    rgba(0, 0, 0, 0.20);
+
+  --portfolio-soft-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, 0.18);
+}
+
+
+/* ===========================================
+   COMMON PORTFOLIO CLASSES
+=========================================== */
+
+.portfolio-card {
+  background:
+    var(--portfolio-card-bg);
+
+  border:
+    1px solid
+    var(--portfolio-card-border);
+
+  border-radius:
+    var(--portfolio-card-radius);
+
+  padding:
+    var(--portfolio-card-padding);
+
+  box-shadow:
+    var(--portfolio-card-shadow);
+
+  backdrop-filter:
+    blur(14px);
+
+  transition:
+    background var(--portfolio-transition),
+    border-color var(--portfolio-transition),
+    color var(--portfolio-transition),
+    box-shadow var(--portfolio-transition);
+}
+
+.portfolio-soft-card {
+  background:
+    var(--portfolio-soft-bg);
+
+  border-radius:
+    var(--portfolio-small-radius);
+}
+
+.portfolio-title {
+  color:
+    var(--portfolio-text);
+
+  font-size:
+    var(--portfolio-title-size);
+
+  font-weight: 800;
+}
+
+.portfolio-section-title {
+  color:
+    var(--portfolio-text);
+
+  font-size:
+    var(--portfolio-section-title-size);
+
+  font-weight: 800;
+}
+
+.portfolio-body {
+  color:
+    var(--portfolio-text-soft);
+
+  font-size:
+    var(--portfolio-body-size);
+
+  line-height:
+    var(--portfolio-line-height);
+}
+
+.portfolio-muted {
+  color:
+    var(--portfolio-text-muted);
+}
+
+
+/* ===========================================
+   RESPONSIVE — TABLET
+=========================================== */
+
+@media (max-width: 1024px) {
+  :root {
+    --portfolio-left-width:
+      290px;
+
+    --portfolio-card-padding:
+      26px;
+
+    --portfolio-content-gap:
+      22px;
+
+    --portfolio-section-gap:
+      20px;
+
+    --portfolio-avatar-height:
+      220px;
+
+    --portfolio-section-icon-size:
+      26px;
+
+    --portfolio-card-title-size:
+      17px;
+
+    --portfolio-experience-meta-width:
+      125px;
+
+    --portfolio-item-gap:
+      16px;
+
+    --portfolio-experience-max-height:
+      400px;
+
+    --portfolio-education-max-height:
+      400px;
+
+    --portfolio-project-max-height:
+      480px;
+
+    --portfolio-project-icon-button-size:
+      34px;
+
+    --portfolio-contact-padding:
+      26px;
+
+    --portfolio-contact-grid-gap:
+      32px;
+
+    --portfolio-contact-title-size:
+      32px;
+  }
+}
+
+
+/* ===========================================
+   RESPONSIVE — MOBILE
+=========================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --portfolio-left-width:
+      100%;
+
+    --portfolio-card-radius:
+      22px;
+
+    --portfolio-contact-radius:
+      24px;
+
+    --portfolio-card-padding:
+      20px;
+
+    --portfolio-page-padding-x:
+      var(--portfolio-mobile-padding-x);
+
+    --portfolio-page-padding-y:
+      var(--portfolio-mobile-padding-y);
+
+    --portfolio-content-gap:
+      var(--portfolio-mobile-gap);
+
+    --portfolio-section-gap:
+      var(--portfolio-mobile-gap);
+
+    --portfolio-avatar-height:
+      200px;
+
+    --portfolio-section-icon-size:
+      25px;
+
+    --portfolio-section-icon-core-size:
+      9px;
+
+    --portfolio-title-size:
+      24px;
+
+    --portfolio-section-title-size:
+      19px;
+
+    --portfolio-card-title-size:
+      16px;
+
+    --portfolio-body-size:
+      14px;
+
+    --portfolio-experience-meta-width:
+      100%;
+
+    --portfolio-item-gap:
+      14px;
+
+    --portfolio-experience-max-height:
+      360px;
+
+    --portfolio-education-max-height:
+      360px;
+
+    --portfolio-project-max-height:
+      430px;
+
+    --portfolio-project-gap:
+      14px;
+
+    --portfolio-project-icon-button-size:
+      34px;
+
+    --portfolio-scroll-padding:
+      6px;
+
+    --portfolio-contact-padding:
+      20px;
+
+    --portfolio-contact-grid-gap:
+      24px;
+
+    --portfolio-contact-title-size:
+      28px;
+
+    --portfolio-contact-description-size:
+      14px;
+  }
+}
+
+
+/* ===========================================
+   RESPONSIVE — SMALL MOBILE
+=========================================== */
+
+@media (max-width: 480px) {
+  :root {
+    --portfolio-card-padding:
+      16px;
+
+    --portfolio-avatar-height:
+      180px;
+
+    --portfolio-title-size:
+      22px;
+
+    --portfolio-section-title-size:
+      18px;
+
+    --portfolio-card-title-size:
+      15px;
+
+    --portfolio-small-size:
+      11px;
+
+    --portfolio-contact-padding:
+      16px;
+
+    --portfolio-contact-title-size:
+      24px;
+  }
+}
+/* =========================================
+   POKÉ BALL ROTATION
+========================================= */
+
+@keyframes portfolioPokeballRotateX {
+  from {
+    transform:
+      perspective(180px)
+      rotateX(0deg);
+  }
+
+  to {
+    transform:
+      perspective(180px)
+      rotateX(360deg);
+  }
+}
+
+.portfolio-pokeball {
+  position: relative;
+
+  width:
+    var(--portfolio-pokeball-size);
+
+  height:
+    var(--portfolio-pokeball-size);
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    var(--portfolio-pokeball-line);
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background:
+    var(--portfolio-pokeball-white);
+
+  box-shadow:
+    0 3px 8px
+    rgba(50, 60, 70, 0.14);
+
+  transform-style: preserve-3d;
+
+  animation:
+    portfolioPokeballRotateX
+    var(--portfolio-pokeball-rotation-duration)
+    linear
+    infinite;
+
+  will-change: transform;
+}
+
+
+/* Gold upper half */
+
+.portfolio-pokeball::before {
+  content: '';
+
+  position: absolute;
+
+  inset:
+    0 0 50% 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--portfolio-pokeball-gold) 0%,
+      var(--portfolio-pokeball-gold-dark) 100%
+    );
+}
+
+
+/* White lower half */
+
+.portfolio-pokeball::after {
+  content: '';
+
+  position: absolute;
+
+  inset:
+    50% 0 0 0;
+
+  background:
+    var(--portfolio-pokeball-white);
+}
+
+
+/* Middle line */
+
+.portfolio-pokeball-line {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: 50%;
+
+  height: 2px;
+
+  z-index: 3;
+
+  transform:
+    translateY(-50%);
+
+  background:
+    var(--portfolio-pokeball-line);
+}
+
+
+/* Center */
+
+.portfolio-pokeball-core {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  z-index: 4;
+
+  width:
+    var(--portfolio-pokeball-core-size);
+
+  height:
+    var(--portfolio-pokeball-core-size);
+
+  transform:
+    translate(-50%, -50%);
+
+  border:
+    1px solid
+    var(--portfolio-pokeball-core-border);
+
+  border-radius: 50%;
+
+  background:
+    var(--portfolio-pokeball-core);
+
+  box-shadow:
+    0 1px 4px
+    rgba(50, 60, 70, 0.18);
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-pokeball {
+    animation: none;
+  }
+}

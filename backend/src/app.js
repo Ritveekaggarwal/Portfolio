@@ -1,0 +1,50 @@
+import express from 'express'
+import cors from 'cors'
+import cookieParser from 'cookie-parser'
+
+import portfolioRoutes from '../routes/portfolio.routes.js'
+import experienceRoutes from '../routes/experience.routes.js'
+import educationRoutes from '../routes/education.routes.js'
+import projectRoutes from '../routes/project.routes.js'
+import contactRoutes from '../routes/contact.routes.js'
+import authRoutes from '../routes/auth.routes.js'
+import aboutRoutes from '../routes/about.routes.js'
+
+const app = express()
+
+// ---------------------------------------------
+// Middleware
+// ---------------------------------------------
+
+app.use(
+  cors({
+    origin: 'http://localhost:5173',
+    credentials: true,
+  }),
+)
+
+app.use(express.json())
+
+app.use(express.urlencoded({ extended: true }))
+
+app.use(cookieParser())
+
+// ---------------------------------------------
+// Routes
+// ---------------------------------------------
+
+app.use('/api/portfolio', portfolioRoutes)
+
+app.use('/api/experience', experienceRoutes)
+
+app.use('/api/education', educationRoutes)
+
+app.use('/api/projects', projectRoutes)
+
+app.use('/api/contact', contactRoutes)
+
+app.use('/api/auth', authRoutes)
+
+app.use('/api/about', aboutRoutes)
+
+export default app

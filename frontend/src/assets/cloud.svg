@@ -1,0 +1,31 @@
+<svg width="420" height="150" viewBox="0 0 420 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+    </filter>
+
+    <linearGradient id="cloudLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.90"></stop>
+      <stop offset="100%" stop-color="#f7fbff" stop-opacity="0.68"></stop>
+    </linearGradient>
+  </defs>
+
+  <path d="
+      M 42 117
+      C 17 115, 8 101, 12 84
+      C 16 67, 31 58, 49 59
+      C 54 39, 72 28, 93 31
+      C 103 10, 126 1, 147 7
+      C 163 11, 175 23, 180 39
+      C 193 24, 212 18, 229 23
+      C 246 28, 256 40, 259 56
+      C 272 48, 288 47, 301 54
+      C 314 61, 321 74, 320 88
+      C 343 84, 365 96, 369 112
+      C 374 131, 358 140, 335 141
+      L 48 141
+      C 32 141, 20 133, 21 123
+      C 22 119, 28 117, 42 117
+      Z
+    " fill="url(#cloudLight)" filter="url(#soft)"></path>
+</svg>
