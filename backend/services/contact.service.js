@@ -8,9 +8,6 @@ const transporter = nodemailer.createTransport({
   secure: false,
   requireTLS: true,
 
-  // Force IPv4 on Render.
-  family: 4,
-
   auth: {
     user: config.email.user,
     pass: config.email.appPassword,
@@ -21,12 +18,16 @@ const transporter = nodemailer.createTransport({
   socketTimeout: 60000,
 })
 
-transporter.verify()
+transporter
+  .verify()
   .then(() => {
     console.log('SMTP connection verified')
   })
   .catch((error) => {
-    console.error('SMTP verification failed:', error)
+    console.error(
+      'SMTP verification failed:',
+      error,
+    )
   })
 
 const sendContactEmail = async ({
