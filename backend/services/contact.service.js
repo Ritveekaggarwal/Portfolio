@@ -4,9 +4,12 @@ import config from '../config/config.js'
 const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 587,
-  secure: false,
 
+  secure: false,
   requireTLS: true,
+
+  // Force IPv4 on Render.
+  family: 4,
 
   auth: {
     user: config.email.user,
@@ -18,6 +21,14 @@ const transporter = nodemailer.createTransport({
   socketTimeout: 60000,
 })
 
+transporter.verify()
+  .then(() => {
+    console.log('SMTP connection verified')
+  })
+  .catch((error) => {
+    console.error('SMTP verification failed:', error)
+  })
+
 const sendContactEmail = async ({
   name,
   email,
@@ -26,7 +37,6 @@ const sendContactEmail = async ({
 }) => {
   const mailOptions = {
     from: config.email.user,
-
     to: config.email.receiver,
 
     replyTo: email,
@@ -73,9 +83,7 @@ ${message}
     `,
   }
 
-  return await transporter.sendMail(
-    mailOptions,
-  )
+  return transporter.sendMail(mailOptions)
 }
 
 export default sendContactEmail
