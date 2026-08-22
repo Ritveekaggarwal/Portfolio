@@ -167,18 +167,24 @@ function RightSection({
             >
               {experiences.map(
                 (experience) => (
-                  <article
-                    key={experience._id}
-                    className="grid min-w-0 border-l-2 pl-5"
-                    style={{
-                      gap:
-                        'var(--portfolio-item-gap)',
-                      borderColor:
-                        'var(--portfolio-green)',
-                      gridTemplateColumns:
-                        'var(--portfolio-experience-meta-width) minmax(0,1fr)',
-                    }}
-                  >
+                 <article
+  key={experience._id}
+  className="
+    grid
+    min-w-0
+    grid-cols-1
+    border-l-2
+    pl-5
+    md:[grid-template-columns:var(--portfolio-experience-meta-width)_minmax(0,1fr)]
+  "
+  style={{
+    gap:
+      'var(--portfolio-item-gap)',
+
+    borderColor:
+      'var(--portfolio-green)',
+  }}
+>
                     <div className="min-w-0">
                       <p
                         className="break-words font-semibold"
